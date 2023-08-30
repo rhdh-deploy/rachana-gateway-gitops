@@ -1,0 +1,15 @@
+app:
+  name: rachana-poi-gateway-app
+  namespace: rachana
+  cluster: .apps.a1jxqhzp.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-deploy/rachana-gateway
+  org: rhdh-deploy
+  name: rachana-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: rachana/poi-gateway-app
+  tag: latest
